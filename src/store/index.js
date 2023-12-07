@@ -77,8 +77,7 @@ const state = proxy({
 //   }
 // };
 
-const BASE_URL =
-  "https://master--creative-rugelach-7bdb51.netlify.app/api/user";
+const BASE_URL = "https://creative-rugelach-7bdb51.netlify.app/api/user";
 
 const customFetch = async (
   url,
