@@ -90,6 +90,8 @@ const customFetch = async (
 
   const headers = {
     "Content-Type": "application/json",
+    "Access-Control-Allow-Origin":
+      "https://zippy-florentine-e4aede.netlify.app",
   };
 
   if (authToken) {
