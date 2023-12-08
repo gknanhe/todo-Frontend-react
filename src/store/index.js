@@ -77,7 +77,7 @@ const state = proxy({
 //   }
 // };
 
-const BASE_URL = "https://creative-rugelach-7bdb51.netlify.app/api/user";
+const BASE_URL = "https://todo-backend-i499.onrender.com/api/user";
 
 const customFetch = async (
   url,
@@ -228,7 +228,7 @@ export const signin = async (email, password) => {
 
   const response = await customFetch("login", "POST", loginData);
 
-  console.log("Response:", response);
+  console.log("Response  headers:", response.headers);
   localStorage.setItem("authToken", JSON.stringify(response));
   // localStorage.setItem("userData", JSON.stringify(response));
 
