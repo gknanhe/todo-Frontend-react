@@ -4,14 +4,14 @@ this is simple todo list app where user can create , update, delete, and mark as
 
 <br/>
 <p align="center">
-  <img  width="auto" src="https://github.com/gknanhe/codeial-react-cn/assets/74034986/1c37d066-730e-4e2b-a86f-442894c1178f">
+  <img  width="auto" src="https://github.com/codedamn/full-mern-stack-video/assets/74034986/da4910a3-69fa-43ae-a76b-e5fe2e03b465">
 <!-- <img height="400" width="800" src="https://user-images.githubusercontent.com/76626529/182868886-3f26cbc9-f619-4250-8951-0d834805251c.png"> -->
 </p>
 <br/>
 
 ## 🔗 Links
 
-> ## Checkout the Website [Web Application](https://master--stellar-conkies-ebd1af.netlify.app/)
+> ## Checkout the Website [Web Application](https://zippy-florentine-e4aede.netlify.app/)
 
 <br/>
 
@@ -20,6 +20,8 @@ this is simple todo list app where user can create , update, delete, and mark as
 - User authentication (signup, login, logout)
 - Add, edit, and delete tasks
 - Responsive design
+- Search Functionality
+- Filter Functionality
 
 ## Technologies Used
 
@@ -27,7 +29,8 @@ this is simple todo list app where user can create , update, delete, and mark as
 - Valtio (for state management)
 - Tailwind CSS (for styling)
 - React Router (for client-side routing)
-- Local storage (for data persistence)
+- Restfull Backend API for seamless data transfer (for data persistence)
+- JWT For The Authentication
 
 ## Folder structure
 
