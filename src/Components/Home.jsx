@@ -11,10 +11,13 @@ const Home = () => {
   const snap = useSnapshot(state);
 
   useEffect(() => {
+    console.log("home check", state.loggedUser._id);
     const fetchData = async () => {
       try {
         // console.log("In Home", state.loggedUser.user._id);
-        const fetchedTodos = await fetchAllTodos(state.loggedUser.user._id);
+        const fetchedTodos = await fetchAllTodos(
+          state.loggedUser._id || state.loggedUser.user._id
+        );
         if (fetchedTodos) {
           console.log("home fetchedtodos", fetchedTodos);
           // Update the Valtio state (snap.todos) directly
@@ -26,10 +29,13 @@ const Home = () => {
       }
     };
 
+    // if (state.loggedUser.user) {
+    //   fetchData();
+    // }
     fetchData(); // Call the async function immediately
 
     // No need to return anything from useEffect
-  }, [state.loggedUser.user._id]);
+  }, [state.loggedUser]);
 
   return (
     <div className="flex items-center justify-center my-[100px] flex-col gap-14">

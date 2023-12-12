@@ -71,7 +71,7 @@ const Task = ({ todo }) => {
           <div className="text-white mx-1 my-1">
             <TaskOptions
               id={todo._id}
-              userId={snap.loggedUser.user._id}
+              userId={state.loggedUser._id || snap.loggedUser.user._id}
               todo={todo}
             />
           </div>

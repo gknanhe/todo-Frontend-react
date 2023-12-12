@@ -228,12 +228,12 @@ export const signin = async (email, password) => {
 
   const response = await customFetch("login", "POST", loginData);
 
-  console.log("Response  headers:", response.headers);
+  console.log("Response  headers:", response);
   localStorage.setItem("authToken", JSON.stringify(response));
   // localStorage.setItem("userData", JSON.stringify(response));
 
   state.loggedUser = response.user;
-  console.log("user token", state.loggedUser);
+  console.log("user token", state.loggedUser._id);
   // console.log("userData", state.user);
 
   return response;
